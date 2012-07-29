@@ -60,7 +60,7 @@ class ProductTest < ActiveSupport::TestCase
     assert !product.save
     # assert_equal "has already been taken", product.errors[:title].join('; ')
     # to avoid using hard-coded string for the active record error; use the build-in error message table
-    assert_equal I18n.translate("activerecord.errors.messages.taken"), product.errors[:title].messages.join("; ")
+    assert_equal I18n.translate("activerecord.errors.messages.taken"), product.errors[:title].join("; ")
                           
   end
 end

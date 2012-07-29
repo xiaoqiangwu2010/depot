@@ -14,7 +14,11 @@ class ProductsControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:products)
+    assert_select "table tr", 3
+    assert_select "table tr .list_description", 3
+    assert_select "table tr .list_actions a", 9
+    assert_select "table tr td dl", 3
+    assert_select "table tr td dt", "Programming Ruby 1.9"
   end
 
   test "should get new" do
