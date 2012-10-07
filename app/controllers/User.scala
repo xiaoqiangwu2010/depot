@@ -10,7 +10,7 @@ import net.liftweb.http.S
  * The singleton that has methods for accessing the database
  */
 object User extends User with MetaMegaProtoUser[User] {
-  override def dbTableName = "users" // define the DB table name
+  override def dbTableName = "users" // define the DB table namefdsafdsafdsafdsafdsafjkdsafjsajfkd;kjafk;dsafl;jdkl;jfdlfjdl;ajfld;safjjfd;jlaj
   override def screenWrap = Full(<lift:surround with="default" at="content">
 			       <lift:bind /></lift:surround>)
   // define the order fields will appear in forms and output
